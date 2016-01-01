@@ -1,0 +1,8 @@
+set number
+
+if &t_Co > 1
+	syntax enable
+endif
+
+" for backupfile
+:set backupdir=~/dotfiles/backupfiles
