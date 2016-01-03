@@ -27,23 +27,41 @@ source ~/dotfiles/.vimrc.indent " for indent setting
 ~~~~
 
 ## Preparation(If you use plugin)
+
+### Install Neobundle(Must)
 ~~~~
 $ mkdir -p ~/.vim/bundle
 $ git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 ~~~~
-
 
 ### For vim-autopep8
 ~~~~
 $ sudo pip install --upgrade autopep8
 ~~~~
 
+if you don't need vim-autopep8. Comment out below line from `.vimrc.bundle`
+~~~~
+NeoBundle 'tell-k/vim-autopep8'
+~~~~
+
 ### For processing
-Install Processing
-Menu > Tools > install "processing-java"
+- Install Processing 3.xx (from https://processing.org)
+- Launch Processing
+- Menu > Tools > install "processing-java"
+
+if you don't need processing. Comment out below line from `.vimrc.bundle`
+~~~~
+NeoBundle 'sophacles/vim-processing'
+NeoBundle 'thinca/vim-quickrun'
+let g:quickrun_config = {}
+let g:quickrun_config.processing =  {
+      \     'command': 'processing-java',
+      \     'exec': '%c --sketch=$PWD/ --output=/Library/Processing --run --force',
+      \   }
+~~~~
+
 
 ### Install plugin
 
-Launch Vim and execute `:NeoBundleInstall`
-
+Launch Vim and execute `:NeoBundleInstall` at normal mode.
 
