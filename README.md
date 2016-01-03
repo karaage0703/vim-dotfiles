@@ -1,5 +1,5 @@
 # vim-dotfiles
-This repository is my private dotfiles(But anyone can use this).
+This repository is my private `.vimrc`(But anyone can use this).
 
 # Setup
 ## Install vim and gvim
