@@ -49,7 +49,7 @@ NeoBundle 'tell-k/vim-autopep8'
 - Launch Processing
 - Menu > Tools > install "processing-java"
 
-if you don't need processing. Comment out below line from `.vimrc.bundle`
+if you don't need processing. Comment out below lines from `.vimrc.bundle`
 ~~~~
 NeoBundle 'sophacles/vim-processing'
 NeoBundle 'thinca/vim-quickrun'
