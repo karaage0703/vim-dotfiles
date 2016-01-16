@@ -21,9 +21,23 @@ $ mv ~/dotfiles/.vimrc ~/.vimrc
 Edit `.vimrc` as below
 
 ~~~~
-source ~/dotfiles/.vimrc.basic " for basic setting
-source ~/dotfiles/.vimrc.indent " for indent setting
-" source ~/dotfiles/.vimrc.bundle " for plugin setting
+source ~/dotfiles/basic.vim " for basic setting
+source ~/dotfiles/indent.vim " for indent setting
+" source ~/dotfiles/bundle.vim " for plugin setting
+~~~~
+
+## If you need ROS plugin
+If you want to use ROS(Robot Operating System). Below modify is recommended.
+
+`.vimrc` uncomment below line
+~~~~
+source ~/dotfiles/ros.vim " for ROS setting
+~~~~
+
+`.vimrc.bundle` uncomment below line
+
+~~~~
+NeoBundle 'taketwo/vim-ros'
 ~~~~
 
 ## Preparation(If you use plugin)
@@ -60,19 +74,7 @@ let g:quickrun_config.processing =  {
       \   }
 ~~~~
 
-### For ROS
-If you want to use ROS(Robot Operating System). Below modify is recommended.
 
-`.vimrc` uncomment below line
-~~~~
-source ~/dotfiles/.vimrc.ros " for ROS setting
-~~~~
-
-`.vimrc.bundle` uncomment below line
-
-~~~~
-NeoBundle 'taketwo/vim-ros'
-~~~~
 
 ### Install plugin
 
