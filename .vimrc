@@ -1,4 +1,4 @@
-source ~/dotfiles/.vimrc.basic " for basic setting
-source ~/dotfiles/.vimrc.indent " for indent setting
-source ~/dotfiles/.vimrc.bundle " for plugin setting
-" source ~/dotfiles/.vimrc.ros " for ROS setting
+source ~/dotfiles/basic.vim " for basic setting
+source ~/dotfiles/indent.vim " for indent setting
+source ~/dotfiles/bundle.vim " for plugin setting
+" source ~/dotfiles/ros.vim " for ROS setting
