@@ -60,6 +60,19 @@ let g:quickrun_config.processing =  {
       \   }
 ~~~~
 
+### For ROS
+If you want to use ROS(Robot Operating System). Below modify is recommended.
+
+`.vimrc` uncomment below line
+~~~~
+source ~/dotfiles/.vimrc.ros " for ROS setting
+~~~~
+
+`.vimrc.bundle` uncomment below line
+
+~~~~
+NeoBundle 'taketwo/vim-ros'
+~~~~
 
 ### Install plugin
 
