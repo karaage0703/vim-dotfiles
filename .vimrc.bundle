@@ -31,6 +31,7 @@ NeoBundle 'Shougo/vimproc.vim', {
 			\    },
 			\ }
 NeoBundle 'Shougo/vimshell'
+NeoBundle 'Shougo/unite.vim'
 NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'tell-k/vim-autopep8'
 NeoBundle 'tyru/caw.vim.git'
@@ -50,6 +51,7 @@ NeoBundle 'lilydjwg/colorizer'
 NeoBundle 'tpope/vim-fugitive'
 :set statusline+=%{fugitive#statusline()} 
 " NeoBundle 'itchyny/lightline.vim'
+" NeoBundle 'taketwo/vim-ros'
 
 
 call neobundle#end()
