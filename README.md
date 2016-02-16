@@ -63,7 +63,7 @@ NeoBundle 'tell-k/vim-autopep8'
 - Launch Processing
 - Menu > Tools > install "processing-java"
 
-if you don't need processing. Comment out below lines from `.vimrc.bundle`
+If you don't need processing. Comment out below lines from `.vimrc.bundle`
 ~~~~
 NeoBundle 'sophacles/vim-processing'
 NeoBundle 'thinca/vim-quickrun'
@@ -83,9 +83,20 @@ Launch Vim and execute `:NeoBundleInstall` at normal mode.
 
 # About Plugin
 
-## VimShell
-
-
 ## VimUnite
+File launcher is launched by executing below command
+~~~~
+:Unite file
+~~~~
+
+If you want to move parent directory. input `i` and `../`.
+
+## Markdown + Vim
+Edit markdown on vim and execute below command
+~~~~
+:PrevimOpen
+~~~~
+
+If you save markdown file, preview is modified automatically. 
 
 
