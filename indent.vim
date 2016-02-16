@@ -11,3 +11,6 @@ au BufNewFile,BufRead *.pde setf processing
 
 " for css
 autocmd FileType css setl shiftwidth=2 tabstop=2 softtabstop=2
+
+" for markdown
+au BufRead,BufNewFile *.md set filetype=markdown

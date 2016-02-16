@@ -45,14 +45,17 @@ let g:quickrun_config.processing =  {
       \     'exec': '%c --sketch=$PWD/ --output=/Library/Processing --run --force',
       \   }
 NeoBundle 'hail2u/vim-css3-syntax'
-NeoBundle 'taichouchou2/html5.vim'
+" NeoBundle 'taichouchou2/html5.vim'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'lilydjwg/colorizer'
 NeoBundle 'tpope/vim-fugitive'
 :set statusline+=%{fugitive#statusline()} 
 " NeoBundle 'itchyny/lightline.vim'
 " NeoBundle 'taketwo/vim-ros'
-
+NeoBundle 'plasticboy/vim-markdown'
+let g:vim_markdown_folding_disabled = 1
+NeoBundle 'kannokanno/previm'
+NeoBundle 'tyru/open-browser.vim'
 
 call neobundle#end()
 
