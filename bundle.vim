@@ -51,7 +51,7 @@ NeoBundle 'lilydjwg/colorizer'
 NeoBundle 'tpope/vim-fugitive'
 :set statusline+=%{fugitive#statusline()} 
 " NeoBundle 'itchyny/lightline.vim'
-" NeoBundle 'taketwo/vim-ros'
+NeoBundle 'taketwo/vim-ros'
 NeoBundle 'plasticboy/vim-markdown'
 let g:vim_markdown_folding_disabled = 1
 NeoBundle 'kannokanno/previm'
