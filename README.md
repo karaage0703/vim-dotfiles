@@ -12,13 +12,13 @@ $ sudo apt-get install vim-gnome
 ## Clone the dotfiles
 
 ~~~~
-$ git clone https://github.com/karaage0703/vim-dotfiles.git ~/dotfiles
-$ mv ~/dotfiles/.vimrc ~/.vimrc
+$ git clone https://github.com/karaage0703/vim-dotfiles.git
+$ mv ~/vim-dotfiles/.vimrc ~/.vimrc
 ~~~~
 
 # Vim plugin
 ## If you don't need plugin
-Edit `.vimrc` as below
+Edit `.vimrc` like below lines
 
 ~~~~
 source ~/dotfiles/basic.vim " for basic setting
@@ -26,15 +26,15 @@ source ~/dotfiles/indent.vim " for indent setting
 " source ~/dotfiles/bundle.vim " for plugin setting
 ~~~~
 
-## If you need ROS plugin
+## If you don't need ROS plugin
 If you want to use ROS(Robot Operating System). Below modify is recommended.
 
-`.vimrc` uncomment below line
+Comment out below line of `.vimrc` 
 ~~~~
 source ~/dotfiles/ros.vim " for ROS setting
 ~~~~
 
-`.vimrc.bundle` uncomment below line
+Comment out below line of `.vimrc.bundle`
 
 ~~~~
 NeoBundle 'taketwo/vim-ros'
