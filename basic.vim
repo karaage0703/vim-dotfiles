@@ -1,8 +1,12 @@
 set number
 
-if &t_Co > 1
-	syntax enable
-endif
+syntax enable
+let scheme = 'solarized'
+augroup guicolorscheme
+	autocmd!
+	execute 'autocmd GUIEnter * colorscheme' scheme
+augroup END
+execute 'colorscheme' scheme
 
 " for undo/backup/swap/book/hist
 if has("persistent_undo")

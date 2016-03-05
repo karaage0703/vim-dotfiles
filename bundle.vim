@@ -56,6 +56,16 @@ NeoBundle 'plasticboy/vim-markdown'
 let g:vim_markdown_folding_disabled = 1
 NeoBundle 'kannokanno/previm'
 NeoBundle 'tyru/open-browser.vim'
+NeoBundle 'altercation/vim-colors-solarized'
+let g:solarized_termcolors=16
+let g:solarized_termtrans=0
+let g:solarized_degrade=0
+let g:solarized_bold=1
+let g:solarized_underline=1
+let g:solarized_italic=1
+let g:solarized_contrast='normal'
+let g:solarized_visibility='normal'
+
 
 call neobundle#end()
 
