@@ -1,20 +1,48 @@
 # vim-dotfiles
 This repository is my private `.vimrc`(But anyone can use this).
 
+# Enviroment tested
+- Ubuntu14.04
+- Mac OS X Yosemite 10.10.4
+
+Windows? I don't know
+
 # Setup
-## Install vim and gvim
-~~~~
+## Install
+
+### Linux
+vim and gvim
+```
 $ sudo apt-get update
 $ sudo apt-get install vim
 $ sudo apt-get install vim-gnome
-~~~~
+```
 
-## Clone the dotfiles
+### Mac
+Install Mac Vim from following link
+[macvim-kaoriya](https://github.com/splhack/macvim-kaoriya)
 
-~~~~
+## Clone the dotfiles and move .vimrc
+
+### Linux
+```
 $ git clone https://github.com/karaage0703/vim-dotfiles.git
 $ mv ~/vim-dotfiles/.vimrc ~/.vimrc
-~~~~
+```
+
+## Mac
+
+```
+$ git clone https://github.com/karaage0703/vim-dotfiles.git
+$ mv ~/vim-dotfiles/.vimrc ~/.vimrc
+$ chmod 755 ~/vim-dotfiles/mvim
+$ sudo mv ~/vim-dotfiles/mvim /usr/bin
+```
+
+mvim original file is following. thanks
+
+[mvim](http://repo.or.cz/w/MacVim/KaoriYa.git/blob_plain/HEAD:/src/MacVim/mvim)
+
 
 # Vim plugin
 ## If you don't need plugin
@@ -81,22 +109,29 @@ let g:quickrun_config.processing =  {
 Launch Vim and execute `:NeoBundleInstall` at normal mode.
 
 
-# About Plugin
+# Plugin Memo
+
+## VimShell
+```
+:VimShell
+```
+
+|item| description|
+|---|---|
+|`ctrl+l`|history|
 
 ## VimUnite
 File launcher is launched by executing below command
-~~~~
+```
 :Unite file
-~~~~
+```
 
 If you want to move parent directory. input `i` and `../`.
 
 ## Markdown + Vim
 Edit markdown on vim and execute below command
-~~~~
+```
 :PrevimOpen
-~~~~
+```
 
 If you save markdown file, preview is modified automatically. 
-
-
