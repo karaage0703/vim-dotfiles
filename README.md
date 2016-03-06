@@ -109,7 +109,23 @@ let g:quickrun_config.processing =  {
       \   }
 ```
 
-### Install plugin
+### For color scheme(solarized)
+#### Mac
+```sh
+$ git clone https://github.com/tomislav/osx-terminal.app-colors-solarized
+```
+
+import color shceme file from terminal on GUI
+
+#### Linux
+```sh
+$ git clone git://github.com/sigurdga/gnome-terminal-colors-solarized.git
+$ cd gnome-terminal-colors-solarized
+$ ./install.sh
+```
+
+
+## Install plugin
 
 Launch Vim and execute `:NeoBundleInstall` at normal mode.
 
