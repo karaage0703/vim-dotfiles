@@ -12,7 +12,7 @@ Windows? I don't know
 
 ### Linux
 vim and gvim
-```
+```sh
 $ sudo apt-get update
 $ sudo apt-get install vim
 $ sudo apt-get install vim-gnome
@@ -25,70 +25,73 @@ Install Mac Vim from following link
 ## Clone the dotfiles and move .vimrc
 
 ### Linux
-```
+Execute following commands
+```sh
 $ git clone https://github.com/karaage0703/vim-dotfiles.git
 $ cp ~/vim-dotfiles/.vimrc ~/.vimrc
 ```
 
 ## Mac
-
-```
+Execute following commands
+```sh
 $ git clone https://github.com/karaage0703/vim-dotfiles.git
 $ mv ~/vim-dotfiles/.vimrc ~/.vimrc
 $ chmod 755 ~/vim-dotfiles/mvim
 $ sudo cp ~/vim-dotfiles/mvim /usr/bin
 ```
-
 mvim original file is following. thanks  
 [mvim](http://repo.or.cz/w/MacVim/KaoriYa.git/blob_plain/HEAD:/src/MacVim/mvim)
 
 # Update dotfiles
-```
+```sh
 $ cd ~/vim-dotfiles
 $ git pull
 ```
 
 # Vim plugin
 ## If you don't need plugin
-Edit `.vimrc` like below lines
-
-~~~~
-source ~/dotfiles/basic.vim " for basic setting
-source ~/dotfiles/indent.vim " for indent setting
-" source ~/dotfiles/bundle.vim " for plugin setting
-~~~~
+Comment out importing `bundle.vim` line of `.vimrc` like below.
+```vim
+" source ~/vim-dotfiles/bundle.vim " for plugin setting
+source ~/vim-dotfiles/basic.vim " for basic setting
+source ~/vim-dotfiles/indent.vim " for indent setting
+source ~/vim-dotfiles/ros.vim " for ROS setting
+```
 
 ## If you don't need ROS plugin
-If you want to use ROS(Robot Operating System). Below modify is recommended.
-
-Comment out below line of `.vimrc` 
-~~~~
-source ~/dotfiles/ros.vim " for ROS setting
-~~~~
+Comment out importing `ros.vim` line of `.vimrc` like below. 
+```vim
+source ~/vim-dotfiles/bundle.vim " for plugin setting
+source ~/vim-dotfiles/basic.vim " for basic setting
+source ~/vim-dotfiles/indent.vim " for indent setting
+" source ~/vim-dotfiles/ros.vim " for ROS setting
+```
 
 Comment out below line of `.vimrc.bundle`
 
-~~~~
+```vim
 NeoBundle 'taketwo/vim-ros'
-~~~~
+```
 
 ## Preparation(If you use plugin)
 
 ### Install Neobundle(Must)
-~~~~
+Execute following commands
+```sh
 $ mkdir -p ~/.vim/bundle
 $ git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
-~~~~
+```
 
 ### For vim-autopep8
-~~~~
+Execute following command
+```sh
 $ sudo pip install --upgrade autopep8
-~~~~
+```
 
 if you don't need vim-autopep8. Comment out below line from `.vimrc.bundle`
-~~~~
+```sh
 NeoBundle 'tell-k/vim-autopep8'
-~~~~
+```
 
 ### For processing
 - Install Processing 3.xx (from https://processing.org)
@@ -96,7 +99,7 @@ NeoBundle 'tell-k/vim-autopep8'
 - Menu > Tools > install "processing-java"
 
 If you don't need processing. Comment out below lines from `.vimrc.bundle`
-~~~~
+```vim
 NeoBundle 'sophacles/vim-processing'
 NeoBundle 'thinca/vim-quickrun'
 let g:quickrun_config = {}
@@ -104,9 +107,7 @@ let g:quickrun_config.processing =  {
       \     'command': 'processing-java',
       \     'exec': '%c --sketch=$PWD/ --output=/Library/Processing --run --force',
       \   }
-~~~~
-
-
+```
 
 ### Install plugin
 
