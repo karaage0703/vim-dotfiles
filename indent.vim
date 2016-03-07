@@ -21,3 +21,6 @@ au BufRead,BufNewFile *.md set filetype=markdown
 " for lisp
 au BufNewFile,BufRead *.l :set filetype=lisp
 autocmd FileType lisp setl shiftwidth=2 tabstop=2 softtabstop=2
+
+" launch color scheme same as xml
+au BufNewFile,BufRead *.launch set filetype=xml
