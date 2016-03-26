@@ -27,6 +27,7 @@ Install Mac Vim from following link
 ### Linux
 Execute following commands
 ```sh
+$ cd
 $ git clone https://github.com/karaage0703/vim-dotfiles.git
 $ ln -sf ~/vim-dotfiles/.vimrc ~/.vimrc
 ```
@@ -34,6 +35,7 @@ $ ln -sf ~/vim-dotfiles/.vimrc ~/.vimrc
 ## Mac
 Execute following commands
 ```sh
+$ cd
 $ git clone https://github.com/karaage0703/vim-dotfiles.git
 $ ln -sf ~/vim-dotfiles/.vimrc ~/.vimrc
 $ chmod 755 ~/vim-dotfiles/mvim
