@@ -49,7 +49,6 @@ NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'lilydjwg/colorizer'
 NeoBundle 'tpope/vim-fugitive'
-:set statusline+=%{fugitive#statusline()} 
 " NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'taketwo/vim-ros'
 NeoBundle 'plasticboy/vim-markdown'
