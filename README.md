@@ -162,3 +162,8 @@ Edit markdown on vim and execute below command
 ```
 
 If you save markdown file, preview is modified automatically. 
+
+# Special Thanks
+- https://github.com/kumattau/dotfiles
+- https://github.com/Shougo/
+- https://github.com/AtsushiSakai/myvim
