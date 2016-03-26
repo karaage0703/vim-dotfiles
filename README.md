@@ -8,7 +8,7 @@ This repository is my private `.vimrc`(But anyone can use this).
 Windows? I don't know
 
 # Setup
-## Install
+## Vim Install
 
 ### Linux
 vim and gvim
@@ -37,7 +37,7 @@ Execute following commands
 $ git clone https://github.com/karaage0703/vim-dotfiles.git
 $ ln -sf ~/vim-dotfiles/.vimrc ~/.vimrc
 $ chmod 755 ~/vim-dotfiles/mvim
-$ sudo cp ~/vim-dotfiles/mvim /usr/bin
+$ sudo cp ~/vim-dotfiles/mvim /usr/local/bin
 ```
 mvim original file is following. thanks  
 [mvim](http://repo.or.cz/w/MacVim/KaoriYa.git/blob_plain/HEAD:/src/MacVim/mvim)
@@ -48,6 +48,9 @@ Execute following commands
 $ cd ~/vim-dotfiles
 $ git pull
 ```
+
+# Caution
+Before launch vim. Please read Vim plugin section of this README.
 
 # Vim plugin
 ## If you don't need plugin
