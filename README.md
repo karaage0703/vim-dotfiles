@@ -15,7 +15,7 @@ vim and gvim
 ```sh
 $ sudo apt-get update
 $ sudo apt-get install vim
-$ sudo apt-get install vim-gnome
+$ sudo apt-get install vim-gtk
 ```
 
 ### Mac
@@ -28,14 +28,14 @@ Install Mac Vim from following link
 Execute following commands
 ```sh
 $ git clone https://github.com/karaage0703/vim-dotfiles.git
-$ cp ~/vim-dotfiles/.vimrc ~/.vimrc
+$ ln -sf ~/vim-dotfiles/.vimrc ~/.vimrc
 ```
 
 ## Mac
 Execute following commands
 ```sh
 $ git clone https://github.com/karaage0703/vim-dotfiles.git
-$ mv ~/vim-dotfiles/.vimrc ~/.vimrc
+$ ln -sf ~/vim-dotfiles/.vimrc ~/.vimrc
 $ chmod 755 ~/vim-dotfiles/mvim
 $ sudo cp ~/vim-dotfiles/mvim /usr/bin
 ```
@@ -43,6 +43,7 @@ mvim original file is following. thanks
 [mvim](http://repo.or.cz/w/MacVim/KaoriYa.git/blob_plain/HEAD:/src/MacVim/mvim)
 
 # Update dotfiles
+Execute following commands
 ```sh
 $ cd ~/vim-dotfiles
 $ git pull
