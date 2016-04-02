@@ -35,8 +35,8 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'tell-k/vim-autopep8'
 NeoBundle 'tyru/caw.vim.git'
-nmap <Leader>c <Plug>(caw:i:toggle)
-vmap <Leader>c <Plug>(caw:i:toggle)
+nmap <Leader>c <Plug>(caw:tildepos:toggle)
+vmap <Leader>c <Plug>(caw:tildepos:toggle)
 NeoBundle 'sophacles/vim-processing'
 NeoBundle 'thinca/vim-quickrun'
 let g:quickrun_config = {}
