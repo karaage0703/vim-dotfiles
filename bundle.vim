@@ -30,32 +30,33 @@ NeoBundle 'Shougo/vimproc.vim', {
 			\     'unix' : 'gmake',
 			\    },
 			\ }
-NeoBundle 'Shougo/vimshell'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'davidhalter/jedi-vim'
-NeoBundle 'tell-k/vim-autopep8'
-NeoBundle 'tyru/caw.vim.git'
-nmap <Leader>c <Plug>(caw:hatpos:toggle)
+NeoBundle 'Shougo/vimshell'				" vimshell
+NeoBundle 'Shougo/unite.vim'				" unite file
+NeoBundle 'davidhalter/jedi-vim'			" for python
+NeoBundle 'tell-k/vim-autopep8'				" for python
+NeoBundle 'tyru/caw.vim.git'				" comment out plugin
+nmap <Leader>c <Plug>(caw:hatpos:toggle)		" toggle comment out
 vmap <Leader>c <Plug>(caw:hatpos:toggle)
-NeoBundle 'sophacles/vim-processing'
-NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'sophacles/vim-processing'			" for processing
+NeoBundle 'thinca/vim-quickrun'				" for processing
 let g:quickrun_config = {}
 let g:quickrun_config.processing =  {
       \     'command': 'processing-java',
       \     'exec': '%c --sketch=$PWD/ --output=/Library/Processing --run --force',
       \   }
-NeoBundle 'hail2u/vim-css3-syntax'
-" NeoBundle 'taichouchou2/html5.vim'
-NeoBundle 'mattn/emmet-vim'
-NeoBundle 'lilydjwg/colorizer'
-NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'hail2u/vim-css3-syntax'			" for css
+NeoBundle 'mattn/emmet-vim'				" for html css
+NeoBundle 'lilydjwg/colorizer'				" for css color preview
+NeoBundle 'tpope/vim-fugitive'				" for git
 " NeoBundle 'itchyny/lightline.vim'
-NeoBundle 'taketwo/vim-ros'
-NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'taketwo/vim-ros'				" for ros
+NeoBundle 'plasticboy/vim-markdown'			" for markdown
 let g:vim_markdown_folding_disabled = 1
-NeoBundle 'kannokanno/previm'
-NeoBundle 'tyru/open-browser.vim'
-NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'kannokanno/previm'				" for markdown(preview)
+NeoBundle 'tyru/open-browser.vim'			" for markdown(preview)
+NeoBundle 'dhruvasagar/vim-table-mode'			" for markdown(table)
+let g:table_mode_corner="|"				" for markdown option
+NeoBundle 'altercation/vim-colors-solarized'		" for color scheme solarized light
 let g:solarized_termcolors=16
 let g:solarized_termtrans=0
 let g:solarized_degrade=0
