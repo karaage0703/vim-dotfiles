@@ -24,3 +24,6 @@ autocmd FileType lisp setl shiftwidth=2 tabstop=2 softtabstop=2
 
 " launch color scheme same as xml
 au BufNewFile,BufRead *.launch set filetype=xml
+
+" for css
+autocmd FileType sh setl shiftwidth=2 tabstop=2 softtabstop=2
