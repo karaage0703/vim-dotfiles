@@ -39,10 +39,22 @@ $ cd
 $ git clone https://github.com/karaage0703/vim-dotfiles.git
 $ ln -sf ~/vim-dotfiles/.vimrc ~/.vimrc
 $ chmod 755 ~/vim-dotfiles/mvim
-$ sudo cp ~/vim-dotfiles/mvim /usr/local/bin
+sudo ln -sf ~/vim-dotfiles/mvim /usr/local/bin/gvim
 ```
 mvim original file is following. thanks  
 [mvim](http://repo.or.cz/w/MacVim/KaoriYa.git/blob_plain/HEAD:/src/MacVim/mvim)
+
+# Vim run (Linux/Mac)
+vim on console
+
+```sh
+$ vim
+```
+
+vim on GUI
+```sh
+$ gvim
+```
 
 # Update dotfiles
 Execute following commands
