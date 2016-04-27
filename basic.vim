@@ -40,6 +40,8 @@ inoremap <C-m> <CR>|			" C-m で改行
 " for ctags option
 nnoremap <c-]> g<c-]>
 
+nnoremap <c-c><c-q> ggVG=		" auto indent all line
+
 " for status line
 set laststatus=2  " display statusline
 " refer to http://blog.ruedap.com/entry/20110712/vim_statusline_git_branch_name
