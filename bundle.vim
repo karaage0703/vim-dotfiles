@@ -35,8 +35,8 @@ NeoBundle 'Shougo/unite.vim'				" unite file
 NeoBundle 'davidhalter/jedi-vim'			" for python
 NeoBundle 'tell-k/vim-autopep8'				" for python
 NeoBundle 'tyru/caw.vim.git'				" comment out plugin
-nmap <Leader>c <Plug>(caw:hatpos:toggle)		" toggle comment out
-vmap <Leader>c <Plug>(caw:hatpos:toggle)
+" nmap <Leader>c <Plug>(caw:hatpos:toggle)		" toggle comment out
+" vmap <Leader>c <Plug>(caw:hatpos:toggle)
 NeoBundle 'sophacles/vim-processing'			" for processing
 NeoBundle 'thinca/vim-quickrun'				" for processing
 let g:quickrun_config = {}
