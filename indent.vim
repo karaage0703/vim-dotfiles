@@ -15,6 +15,9 @@ autocmd FileType html setl shiftwidth=4 tabstop=2 softtabstop=2
 " for css
 autocmd FileType css setl shiftwidth=2 tabstop=2 softtabstop=2
 
+" for c++
+autocmd FileType cpp setl shiftwidth=2 tabstop=2 softtabstop=2
+
 " for markdown
 au BufRead,BufNewFile *.md set filetype=markdown
 
