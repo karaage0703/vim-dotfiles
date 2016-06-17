@@ -22,9 +22,8 @@ $ sudo apt-get install vim-gtk
 Install Mac Vim from following link
 [macvim-kaoriya](https://github.com/splhack/macvim-kaoriya)
 
-## Clone the dotfiles and move .vimrc
-
-### Linux
+## Setup
+### Clone the dotfiles and setting
 Execute following commands
 ```sh
 $ cd
@@ -32,12 +31,17 @@ $ git clone https://github.com/karaage0703/vim-dotfiles.git
 $ ln -sf ~/vim-dotfiles/.vimrc ~/.vimrc
 ```
 
-## Mac
+### Install Neobundle(Must)
 Execute following commands
 ```sh
-$ cd
-$ git clone https://github.com/karaage0703/vim-dotfiles.git
-$ ln -sf ~/vim-dotfiles/.vimrc ~/.vimrc
+$ mkdir -p ~/.vim/bundle
+$ git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+```
+
+### Mac only setting
+Execute following commands
+```sh
+$ cd ~/vim-dotfiles
 $ chmod 755 ~/vim-dotfiles/mvim
 $ sudo ln -sf ~/vim-dotfiles/mvim /usr/local/bin/gvim
 ```
@@ -93,12 +97,6 @@ NeoBundle 'taketwo/vim-ros'
 
 ## Preparation(If you use plugin)
 
-### Install Neobundle(Must)
-Execute following commands
-```sh
-$ mkdir -p ~/.vim/bundle
-$ git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
-```
 
 ### For vim-autopep8
 Execute following command
