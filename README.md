@@ -177,3 +177,6 @@ If you save markdown file, preview is modified automatically.
 - https://github.com/kumattau/dotfiles
 - https://github.com/Shougo/
 - https://github.com/AtsushiSakai/myvim
+
+# License
+This software is released under the MIT License, see LICENSE.
