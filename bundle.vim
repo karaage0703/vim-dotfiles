@@ -8,6 +8,13 @@ if has('vim_starting')
 
   " Required:
   set runtimepath+=~/.vim/bundle/neobundle.vim/
+
+  " NeoBundle is none, install NeoBundle by using git clone
+  if !isdirectory(expand("~/.vim/bundle/neobundle.vim/"))
+    echo "install NeoBundle..."
+    :call system("git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim")
+  endif
+
 endif
 
 " Required:
@@ -65,6 +72,23 @@ let g:solarized_underline=1
 let g:solarized_italic=1
 let g:solarized_contrast='normal'
 let g:solarized_visibility='normal'
+" check vim lua function
+if has('lua')
+    NeoBundle 'Shougo/neocomplete.vim'			" for completion of code
+    NeoBundle "Shougo/neosnippet"			" for completion of snippet
+    NeoBundle 'Shougo/neosnippet-snippets'		" for snippets
+endif
+if neobundle#is_installed('neocomplete.vim')
+    let g:neocomplete#enable_at_startup = 1
+    let g:neocomplete#enable_smart_case = 1
+    let g:neocomplete#min_keyword_length = 3
+    let g:neocomplete#enable_auto_delimiter = 1
+    let g:neocomplete#auto_completion_start_length = 1
+    inoremap <expr><BS> neocomplete#smart_close_popup()."<C-h>"
+
+    imap <expr><CR> neosnippet#expandable() ? "<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "<C-y>" : "<CR>"
+    imap <expr><TAB> pumvisible() ? "<C-n>" : neosnippet#jumpable() ? "<Plug>(neosnippet_expand_or_jump)" : "<TAB>"
+endif
 
 
 call neobundle#end()

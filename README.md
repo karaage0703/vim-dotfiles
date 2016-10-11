@@ -31,13 +31,6 @@ $ git clone https://github.com/karaage0703/vim-dotfiles.git
 $ ln -sf ~/vim-dotfiles/.vimrc ~/.vimrc
 ```
 
-### Install Neobundle(Must)
-Execute following commands
-```sh
-$ mkdir -p ~/.vim/bundle
-$ git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
-```
-
 ### Mac only setting
 Execute following commands
 ```sh
@@ -140,6 +133,12 @@ $ cd gnome-terminal-colors-solarized
 $ ./install.sh
 ```
 
+### For neocomplete, neosnippet, neosnippet-snippets
+#### Mac
+```sh
+$ brew install lua
+$ brew reinstall vim --with-lua
+```
 
 ## Install plugin
 
