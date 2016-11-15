@@ -8,13 +8,6 @@ if has('vim_starting')
 
   " Required:
   set runtimepath+=~/.vim/bundle/neobundle.vim/
-
-  " NeoBundle is none, install NeoBundle by using git clone
-  if !isdirectory(expand("~/.vim/bundle/neobundle.vim/"))
-    echo "install NeoBundle..."
-    :call system("git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim")
-  endif
-
 endif
 
 " Required:
