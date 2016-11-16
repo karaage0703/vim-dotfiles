@@ -32,7 +32,7 @@ NeoBundle 'Shougo/vimproc.vim', {
 			\ }
 NeoBundle 'Shougo/vimshell'				" vimshell
 NeoBundle 'Shougo/unite.vim'				" unite file
-NeoBundle 'davidhalter/jedi-vim'			" for python
+" NeoBundle 'davidhalter/jedi-vim'			" for python
 NeoBundle 'tell-k/vim-autopep8'				" for python
 NeoBundle 'tyru/caw.vim.git'				" comment out plugin
 " nmap <Leader>c <Plug>(caw:hatpos:toggle)		" toggle comment out
