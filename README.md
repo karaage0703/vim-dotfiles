@@ -2,8 +2,9 @@
 This repository is my private `.vimrc`(But anyone can use this).
 
 # Enviroment tested
-- Ubuntu14.04
 - Mac OS X Yosemite 10.10.4
+- Ubuntu 14.04
+- Raspberry Pi 2/3 + Raspbian Jessie
 
 Windows? I don't know
 
