@@ -20,8 +20,13 @@ $ sudo apt-get install vim-gtk
 ```
 
 ### Mac
-Install Mac Vim from following link
-[macvim-kaoriya](https://github.com/splhack/macvim-kaoriya)
+Install Mac Vim from following link:  
+[macvim-kaoriya](https://github.com/splhack/macvim-kaoriya)  
+
+or Install via Homebrew by executing following command:
+```sh
+$ brew cask install macvim
+```
 
 ## Setup
 ### Clone the dotfiles and setting
