@@ -49,7 +49,7 @@ NeoBundle 'mattn/emmet-vim'				" for html css
 NeoBundle 'lilydjwg/colorizer'				" for css color preview
 NeoBundle 'tpope/vim-fugitive'				" for git
 " NeoBundle 'itchyny/lightline.vim'
-NeoBundle 'taketwo/vim-ros'				" for ros
+" NeoBundle 'taketwo/vim-ros'				" for ros
 NeoBundle 'plasticboy/vim-markdown'			" for markdown
 let g:vim_markdown_folding_disabled = 1
 NeoBundle 'kannokanno/previm'				" for markdown(preview)
