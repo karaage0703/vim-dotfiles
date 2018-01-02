@@ -1,4 +1,5 @@
 set number
+set nofixeol " don't change EOF of the last line
 
 syntax enable
 let scheme = 'solarized'
