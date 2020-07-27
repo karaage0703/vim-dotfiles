@@ -1,18 +1,17 @@
 # vim-dotfiles
 This repository is my private `.vimrc`(But anyone can use this).
 
-# Enviroment tested
-- Mac OS X Yosemite 10.10.4
-- Ubuntu 14.04
-- Raspberry Pi 2/3 + Raspbian Jessie
-
-Windows? I don't know
+# Enviroment
+- macOS
+- Ubuntu
+- Raspberry Pi 2/3/4 + Raspberry OS
 
 # Setup
 ## Vim Install
 
 ### Linux
 vim and gvim
+
 ```sh
 $ sudo apt-get update
 $ sudo apt-get install vim
@@ -24,6 +23,7 @@ Install Mac Vim from following link:  
 [macvim-kaoriya](https://github.com/splhack/macvim-kaoriya)  
 
 or Install via Homebrew by executing following command:
+
 ```sh
 $ brew cask install macvim
 ```
@@ -31,14 +31,15 @@ $ brew cask install macvim
 ## Setup
 ### Clone the dotfiles and setting
 Execute following commands
+
 ```sh
-$ cd
-$ git clone https://github.com/karaage0703/vim-dotfiles.git
+$ cd && git clone https://github.com/karaage0703/vim-dotfiles.git
 $ ln -sf ~/vim-dotfiles/.vimrc ~/.vimrc
 ```
 
 ### Install Neobundle(Must)
 Execute following commands
+
 ```sh
 $ mkdir -p ~/.vim/bundle
 $ git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
@@ -46,11 +47,13 @@ $ git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 
 ### Mac only setting
 Execute following commands
+
 ```sh
 $ cd ~/vim-dotfiles
 $ chmod 755 ~/vim-dotfiles/mvim
 $ sudo ln -sf ~/vim-dotfiles/mvim /usr/local/bin/gvim
 ```
+
 mvim original file is following. thanks  
 [mvim](http://repo.or.cz/w/MacVim/KaoriYa.git/blob_plain/HEAD:/src/MacVim/mvim)
 
@@ -83,22 +86,6 @@ Comment out importing `bundle.vim` line of `.vimrc` like below.
 " source ~/vim-dotfiles/bundle.vim " for plugin setting
 source ~/vim-dotfiles/basic.vim " for basic setting
 source ~/vim-dotfiles/indent.vim " for indent setting
-source ~/vim-dotfiles/ros.vim " for ROS setting
-```
-
-## If you don't need ROS plugin
-Comment out importing `ros.vim` line of `.vimrc` like below. 
-```vim
-source ~/vim-dotfiles/bundle.vim " for plugin setting
-source ~/vim-dotfiles/basic.vim " for basic setting
-source ~/vim-dotfiles/indent.vim " for indent setting
-" source ~/vim-dotfiles/ros.vim " for ROS setting
-```
-
-Comment out below line of `.vimrc.bundle`
-
-```vim
-NeoBundle 'taketwo/vim-ros'
 ```
 
 ## Preparation(If you use plugin)

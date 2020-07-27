@@ -2,12 +2,6 @@ set number
 set nofixeol " don't change EOF of the last line
 
 syntax enable
-let scheme = 'solarized'
-augroup guicolorscheme
-	autocmd!
-	execute 'autocmd GUIEnter * colorscheme' scheme
-augroup END
-execute 'colorscheme' scheme
 
 " for undo/backup/swap/book/hist
 if has("persistent_undo")
