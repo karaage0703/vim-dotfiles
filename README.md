@@ -29,7 +29,7 @@ $ brew cask install macvim
 ```
 
 ## Setup
-### Clone the dotfiles and setting
+### Clone the dotfiles and setting（Must)
 Execute following commands
 
 ```sh
@@ -37,7 +37,7 @@ $ cd && git clone https://github.com/karaage0703/vim-dotfiles.git
 $ ln -sf ~/vim-dotfiles/.vimrc ~/.vimrc
 ```
 
-### Install Neobundle(Must)
+### Install Neobundle(Optional)
 Execute following commands
 
 ```sh
@@ -80,16 +80,16 @@ $ git pull
 Before launch vim. Please read Vim plugin section of this README.
 
 # Vim plugin
-## If you don't need plugin
-Comment out importing `bundle.vim` line of `.vimrc` like below.
+## If you need plugin
+Delete comment out importing `bundle.vim` line of `.vimrc` like below.
+
 ```vim
-" source ~/vim-dotfiles/bundle.vim " for plugin setting
+source ~/vim-dotfiles/bundle.vim " for plugin setting
 source ~/vim-dotfiles/basic.vim " for basic setting
 source ~/vim-dotfiles/indent.vim " for indent setting
 ```
 
 ## Preparation(If you use plugin)
-
 
 ### For vim-autopep8
 Execute following command
